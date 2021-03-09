@@ -482,7 +482,7 @@ if(BUILD_TESTING)
     if(${rmw_implementation} STREQUAL "rmw_connext_dynamic_cpp")
       message(STATUS "skipping serialize tests for ${rmw_implementation}")
       set(SKIP_TEST "SKIP_TEST")
-    endif(
+    endif()
 
     set(target_name "test_publisher_subscriber_serialized${target}${target_suffix}")
     ament_add_gtest(
